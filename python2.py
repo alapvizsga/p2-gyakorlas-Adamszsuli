@@ -18,9 +18,15 @@
     Üres lista esetén 0 a visszatérési érték.
     A feladat megoldása során nem használhatod a sum() függvényt!
 '''
+def osszeg(a):
+    if([] == a):
+        return 0
 
+    osszeg = 0
 
-
+    for szam in a:
+        osszeg += szam
+    return osszeg
 #--------------------------
 '''
     A kereses_a_listaban nevű függvény.
@@ -178,7 +184,14 @@ def faktorialis(a):
     paraméterként egy számokat tartalmazó listát kap és
     visszatér a lista számainak átlagával.
 '''
+def lista_atlag(lista):
+    if(lista == []):
+        return 0
+    osszeg = 0
+    for szam in lista:
+        osszeg += szam
 
+    return osszeg / len(lista)
 
 
 #--------------------------
